@@ -17,4 +17,6 @@ year={2019}
 
 ```
 # Installation
-numpy, 
+Codes of this release is implement with python3.6. Please install numpy==1.16, tensorflow==1.14.
+# Usage
+Power Line Corridor LiDAR Point Cloud dataset is classified, 
