@@ -7,7 +7,7 @@ For more details of our method, please refer to our paper.
 # Citation
 If you find our work useful in your research, please consider citing:
 
-@ARTICLE{
+@ARTICLE{sss,
 author={Jisheng Yang, Zijun Huang, Maochun Huang, Xianxina Zeng, Dong Li, Yun Zhang},
 title = {Power Line Corridor LiDAR Point Cloud Segmentation Using Convolutional Neural Network},
 journal={PRCV 2019},
