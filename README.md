@@ -30,19 +30,19 @@ data/kitti/
 ```
 Run ``` calculate_3d_bbox_corners.py ``` to extract point clouds from kitti and label them, you can use [CC](http://www.cloudcompare.org/) to visulize in ```/data/labeled_point_cloud/```. Run ```nine2four.py``` to delete some labels, since we only consider there class: Car, Pedestrian, Cyclist. You can also visulize in /data/input_point_cloud_dir.<br>
 ## train using pointnet
-Run ```data_process_base_kitti.py``` and ```seg_codes/train_base.py``` in sequence. 
+Run ```data_process_base_kitti.py``` and ```/sem_seg/seg_codes/train_base.py``` in sequence. 
 ## validate using pointnet
-Run ```seg_codes/batch_inference_base.py```. You can visualize results in /log_base/dump/. And then open ```seg_codes/statistics_mul.py```  and make sure ```results_dir = base_dir + '/../log_base/dump'``` and run it to see IoU, precision and recall.
+Run ```/sem_seg/seg_codes/batch_inference_base.py```. You can visualize results in /log_base/dump/. And then open ```/sem_seg/seg_codes/statistics_mul.py```  and make sure ```results_dir = base_dir + '/../log_base/dump'``` and run it to see IoU, precision and recall.
 ## train using our method(p3)
-Run ```data_process_local_kitti.py``` and ```seg_codes/train_local.py``` in sequence. 
+Run ```data_process_local_kitti.py``` and ```/sem_seg/seg_codes/train_local.py``` in sequence. 
 ## validate using our method(p3)
-Run ```seg_codes/batch_inference_local.py```. You can visualize results in /log_local/dump/. And then open ```seg_codes/statistics_mul.py``` and make sure ```results_dir = base_dir + '/../log_local/dump'``` and run it  to see IoU, precision and recall.
+Run ```/sem_seg/seg_codes/batch_inference_local.py```. You can visualize results in /log_local/dump/. And then open ```/sem_seg/seg_codes/statistics_mul.py``` and make sure ```results_dir = base_dir + '/../log_local/dump'``` and run it  to see IoU, precision and recall.
 ## extended experiments
 We found channel presentation ![](https://github.com/Prominem/Power-Line-Corridor-LiDAR-Point-Cloud-Segmentation/blob/master/p4.png) works better in Kitti dataset. I means the original intensity. You can try the following operation to see the results.
 ## train using our method(p4)
-Run ```data_process_local_kitti_v2.py``` and ```seg_codes/train_local_v2.py``` in sequence. 
+Run ```data_process_local_kitti_v2.py``` and ```/sem_seg/seg_codes/train_local_v2.py``` in sequence. 
 ## validate using our method(p4)
-Run ```seg_codes/batch_inference_local_v2.py```. You can visualize results in /log_local_v2/dump/. And then open ```seg_codes/statistics_mul.py``` and make sure ```results_dir = base_dir + '/../log_local_v2/dump'``` and run it  to see IoU, precision and recall.
+Run ```/sem_seg/seg_codes/batch_inference_local_v2.py```. You can visualize results in /log_local_v2/dump/. And then open ```/sem_seg/seg_codes/statistics_mul.py``` and make sure ```results_dir = base_dir + '/../log_local_v2/dump'``` and run it  to see IoU, precision and recall.
 # result
 The results are different from those in paper and they are better. Because we didn't have time to train enough epoches before submitting the paper. Table 1 shows the IOU result of 20 epoches. <br>
                                                          Table 1<br>
