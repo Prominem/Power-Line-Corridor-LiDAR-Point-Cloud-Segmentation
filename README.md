@@ -37,6 +37,10 @@ Run ```seg_codes/batch_inference_base.py```. You can visualize results in /log_b
 Run ```data_process_local_kitti.py``` and ```seg_codes/train_local.py``` in sequence. 
 ## validate using our method
 Run ```seg_codes/batch_inference_local.py```. You can visualize results in /log_local/dump/. And then open ```seg_codes/statistics_mul.py``` and make sure ```results_dir = base_dir + '/../log_local/dump'``` and run it  to see IoU, precision and recall.
+## extended experiments
+We found channel presentation p4：$X_c, Y_c, Z_l, I_{N1}, X_n, Y_n, Z_n, I$
+# result
+The results are different from those in paper and they are better. Because we didn't have time to train enough epoches before submitting the paper. Table 1 shows the result of 20 epoches. 
 # References
 [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://github.com/charlesq34/pointnet)<br>
 [SqueezeSeg](https://github.com/BichenWuUCB/SqueezeSeg)
