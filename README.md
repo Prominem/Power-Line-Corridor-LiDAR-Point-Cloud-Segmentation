@@ -22,7 +22,7 @@ Codes of this release is implement with python3.6. Please install numpy==1.16, t
 # Usage
 Power Line Corridor LiDAR Point Cloud dataset is classified, so only experiments on Kitti dataset is discribed. But codes on Power Line Corridor LiDAR Point Cloud dataset is also release.
 # Prepare Training and Validation Data
-Download Kitti 3D object([here](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d)), unzip them and organize the folders as follows:
+Download Kitti 3D object([here](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d)), put them in ```/data```, unzip them and organize the folders as follows:
 ```
 data/kitti/
   data_object_velodyne/
