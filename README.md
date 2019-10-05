@@ -44,11 +44,8 @@ Run ```data_process_local_kitti_v2.py``` and ```seg_codes/train_local_v2.py``` i
 ## validate using our method(p4)
 Run ```seg_codes/batch_inference_local_v2.py```. You can visualize results in /log_local_v2/dump/. And then open ```seg_codes/statistics_mul.py``` and make sure ```results_dir = base_dir + '/../log_local_v2/dump'``` and run it  to see IoU, precision and recall.
 # result
-The results are different from those in paper and they are better. Because we didn't have time to train enough epoches before submitting the paper. Table 1 shows the result of 20 epoches. 
-| |Car|Pedestrian|Cyclist|
-|PointNet(p0)|68.8|18.5|8.8|
-|p3|69.0|27.9|7.5|
-|p4|71.2|29.5|11.1|
+The results are different from those in paper and they are better. Because we didn't have time to train enough epoches before submitting the paper. Table 1 shows the IOU result of 20 epoches. 
+![](https://github.com/Prominem/Power-Line-Corridor-LiDAR-Point-Cloud-Segmentation/blob/master/table1.png)
 # References
 [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://github.com/charlesq34/pointnet)<br>
 [SqueezeSeg](https://github.com/BichenWuUCB/SqueezeSeg)
