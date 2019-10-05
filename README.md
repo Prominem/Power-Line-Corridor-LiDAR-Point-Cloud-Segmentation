@@ -32,11 +32,11 @@ Run ``` calculate_3d_bbox_corners.py ``` to extract point clouds from kitti and 
 ## train using pointnet
 Run ```data_process_base_kitti.py``` and ```seg_codes/train_base.py``` in sequence. 
 ## validate using pointnet
-Run ```seg_codes/batch_inference_base.py```. You can visualize results in /log_base/dump/. And then run ```seg_codes/statistics_mul.py``` to see IoU, precision and recall.
+Run ```seg_codes/batch_inference_base.py```. You can visualize results in /log_base/dump/. And then open ```seg_codes/statistics_mul.py```  and make sure ```results_dir = base_dir + '/../log_base/dump'``` and run it to see IoU, precision and recall.
 ## train using our method
 Run ```data_process_local_kitti.py``` and ```seg_codes/train_local.py``` in sequence. 
 ## validate using our method
-Run ```seg_codes/batch_inference_local.py```. You can visualize results in /log_local/dump/. And then run ```seg_codes/statistics_mul.py``` to see IoU, precision and recall.
+Run ```seg_codes/batch_inference_local.py```. You can visualize results in /log_local/dump/. And then open ```seg_codes/statistics_mul.py``` and make sure ```results_dir = base_dir + '/../log_local/dump'``` and run it  to see IoU, precision and recall.
 # References
 [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://github.com/charlesq34/pointnet)<br>
 [SqueezeSeg](https://github.com/BichenWuUCB/SqueezeSeg)
