@@ -46,7 +46,7 @@ Run ```seg_codes/batch_inference_local_v2.py```. You can visualize results in /l
 # result
 The results are different from those in paper and they are better. Because we didn't have time to train enough epoches before submitting the paper. Table 1 shows the IOU result of 20 epoches. <br>
 Table 1
-<div align=center>![](https://github.com/Prominem/Power-Line-Corridor-LiDAR-Point-Cloud-Segmentation/blob/master/table1.png)
+![](https://github.com/Prominem/Power-Line-Corridor-LiDAR-Point-Cloud-Segmentation/blob/master/table1.png)
 # References
 [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://github.com/charlesq34/pointnet)<br>
 [SqueezeSeg](https://github.com/BichenWuUCB/SqueezeSeg)
